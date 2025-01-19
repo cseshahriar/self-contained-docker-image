@@ -1,0 +1,24 @@
+1. docker build -t self-container-docker-image .
+2. docker run -d -p 8080:80 self-container-docker-image
+docker tag self-container-docker-image <your-dockerhub-username>/self-container-docker-image:latest
+docker login
+docker push shosen/self-container-docker-image:latest
+docker pull shosen/self-container-docker-image:latest
+
+git:
+-------------------------------
+git init
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/your-username/self-container-docker-image.git
+git branch -M main
+git push -u origin main
+-------------------------------
+submission:
+    dockerhub link : docker push shosen/self-contained-docker-image:v1
+    githum link: https://github.com/cseshahriar/self-contained-docker-image
+
+    git remote add origin git@github.com:cseshahriar/self-contained-docker-image.git
+    git branch -M main
+    git push -u origin main
